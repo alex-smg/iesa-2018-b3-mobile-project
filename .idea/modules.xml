@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/iesa-2018-b3-mobile-project.iml" filepath="$PROJECT_DIR$/.idea/iesa-2018-b3-mobile-project.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/iesa-2018-b3-mobile-project2.iml" filepath="$PROJECT_DIR$/.idea/iesa-2018-b3-mobile-project2.iml" />
+>>>>>>> fb19c1650bdb59845c1f9753a1b861e7929147c1
     </modules>
   </component>
 </project>
