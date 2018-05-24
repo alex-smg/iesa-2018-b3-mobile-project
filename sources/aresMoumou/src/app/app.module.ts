@@ -2,11 +2,9 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-<<<<<<< Updated upstream
 import { Camera } from '@ionic-native/camera';
 import { Contacts } from '@ionic-native/contacts';
-=======
->>>>>>> Stashed changes
+
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -39,11 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-<<<<<<< Updated upstream
     Camera,
     Contacts,
-=======
->>>>>>> Stashed changes
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

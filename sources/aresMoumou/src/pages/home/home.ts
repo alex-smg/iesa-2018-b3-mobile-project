@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-<<<<<<< Updated upstream
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
 
-
-=======
->>>>>>> Stashed changes
 
 @Component({
   selector: 'page-home',
@@ -14,12 +10,10 @@ import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/cont
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public base64Image: string;
 
-<<<<<<< Updated upstream
   constructor(public navCtrl: NavController, private camera: Camera, private contacts: Contacts ) {
   }
-
 
     takePhoto(){
       const options: CameraOptions = {
@@ -47,12 +41,4 @@ export class HomePage {
         (error: any) => console.error('Error saving contact.', error)
       );
     }
-
-
-
-
-=======
-  }
-
->>>>>>> Stashed changes
 }
