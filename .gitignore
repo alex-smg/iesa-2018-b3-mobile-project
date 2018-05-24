@@ -3,7 +3,6 @@ node_modules
 .idea
 platforms
 plugins
-resources
 www
 .editorconfig
 config.xml
