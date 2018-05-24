@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+<<<<<<< Updated upstream
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
 
 
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'page-home',
@@ -11,8 +14,9 @@ import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/cont
 })
 export class HomePage {
 
-  public base64Image : string;
+  constructor(public navCtrl: NavController) {
 
+<<<<<<< Updated upstream
   constructor(public navCtrl: NavController, private camera: Camera, private contacts: Contacts ) {
   }
 
@@ -47,4 +51,8 @@ export class HomePage {
 
 
 
+=======
+  }
+
+>>>>>>> Stashed changes
 }
