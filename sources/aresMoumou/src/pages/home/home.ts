@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
+
 
 
 @Component({
@@ -11,7 +13,7 @@ export class HomePage {
 
   public base64Image : string;
 
-  constructor(public navCtrl: NavController, private camera: Camera) {
+  constructor(public navCtrl: NavController, private camera: Camera, private contacts: Contacts ) {
   }
 
 
@@ -30,6 +32,16 @@ export class HomePage {
       }, (err) => {
         // Handle error
       });
+    }
+    accessContacts(){
+      let contact: Contact = this.contacts.create();
+
+      contact.name = new ContactName(null, 'Smith', 'John');
+      contact.phoneNumbers = [new ContactField('mobile', '6471234567')];
+      contact.save().then(
+        () => console.log('Contact saved!', contact),
+        (error: any) => console.error('Error saving contact.', error)
+      );
     }
 
 
