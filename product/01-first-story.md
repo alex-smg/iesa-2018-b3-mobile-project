@@ -1,12 +1,5 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+Titre : Photographier une preuve
 
-\f0\fs24 \cf0 Titre : Photographier une preuve\
-\
-Description: AS A  Employ\'e9 qui fait l\'92audit\
-		   I WANT Prendre une photo et l\'92associer \'e0 une t\'e2che\
-		   SO THAT Je peux justifier une invalidation}
+Description: AS A  Employé qui fait l’audit
+		   I WANT Prendre une photo et l’associer à une tâche
+		   SO THAT Je peux justifier une invalidation
