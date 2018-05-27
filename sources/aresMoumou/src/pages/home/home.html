@@ -12,6 +12,21 @@
           <img [src]="photo" *ngIf="photo" />
         </ion-card>
       </ion-col>
+      <div padding>
+        <ion-item>
+          <ion-label color="primary" stacked>Objet</ion-label>
+          <ion-input [(ngModel)]="subject" type="text" placeholder="Objet du mail"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary" stacked>Corps</ion-label>
+          <ion-input [(ngModel)]="body"  type="text" placeholder="Corps du mail"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary" stacked>Destinataire</ion-label>
+          <ion-input [(ngModel)]="to" type="text" placeholder="toto@gmail.com"></ion-input>
+        </ion-item>
+        <button ion-button block (click)="send()">send</button>
+      </div>
     </ion-row>
   </ion-grid>
 </ion-content>
