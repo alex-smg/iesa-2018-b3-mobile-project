@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { AlertController } from 'ionic-angular';
-import { EmailComposer } from '@ionic-native/email-composer';
 
 
 
@@ -18,30 +17,13 @@ export class HomePage {
   public fileImage: string;
   public responseData: any;
   userData = { user_id: "", token: "", imageB64: "" };
-  subject='';
-  body='';
-  to='';
   constructor(
     public navCtrl: NavController,
     private camera: Camera,
     private alertCtrl: AlertController,
-    public emailComposer: EmailComposer
     //private transfer: FileTransfer, private file: File, private fileUploadOptions: FileUploadOptions
   ) {}
 
-  send(){
-    let email= {
-      to: this.to,
-      cc: [],
-      bcc: [],
-      attachement: [],
-      subject: this.subject,
-      body: this.body,
-      isHtml: false,
-      app: "Gamil"
-    }
-    this.emailComposer.open(email);
-  }
   //const fileTransfer = this.transfer.create();
   ngOnInit() {
     this.photos = [];
