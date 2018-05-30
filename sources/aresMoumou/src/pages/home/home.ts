@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { AlertController } from 'ionic-angular';
+import { Geolocation } from '@ionic-native/geolocation';
 
 
 
@@ -17,10 +18,14 @@ export class HomePage {
   public fileImage: string;
   public responseData: any;
   userData = { user_id: "", token: "", imageB64: "" };
+  lat: any;
+  lng: any;
+
   constructor(
     public navCtrl: NavController,
     private camera: Camera,
     private alertCtrl: AlertController,
+    private geo: Geolocation,
     //private transfer: FileTransfer, private file: File, private fileUploadOptions: FileUploadOptions
   ) {}
 
@@ -75,6 +80,13 @@ export class HomePage {
         console.log(err);
       }
     );
+  }
+
+  ionViewDidLoad() {
+    this.geo.getCurrentPosition().then( pos => {
+      this.lat = pos.coords.latitude;
+      this.lng = pos.coords.longitude;
+    }).catch( error => console.log(error))
   }
 
 

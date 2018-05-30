@@ -5,7 +5,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Camera } from '@ionic-native/camera';
 import { Contacts } from '@ionic-native/contacts';
-
+import { Geolocation } from '@ionic-native/geolocation';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -44,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Camera,
     EmailComposer,
     Contacts,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
