@@ -63,7 +63,7 @@ var TabsPage = /** @class */ (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -98,7 +98,7 @@ var AboutPage = /** @class */ (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], AboutPage);
@@ -133,7 +133,7 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ContactPage);
@@ -196,7 +196,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n  <button ion-button full (click)="takePhoto()" >\n  <ion-icon name="camera" ></ion-icon>&nbsp; &nbsp;Take Photo</button>\n  <button ion-button full (click)="accessContacts()">Contacts</button>\n</ion-content>\n'/*ion-inline-end:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/home/home.html"*/'<ion-header class="header-mou">\n  <ion-navbar>\n    <ion-title>Audit zone 1</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="bg-mou">\n  <div class="gros-bloc">\n    <h2 class="titre-moyen-mou">Sous-zone "cuisine"</h2>\n    <div class="bloc-taille">\n      <h3 class="tache-mou">Tâche :</h3>\n      <p class="nom-tache-mou"> sol propre </p>\n      <button ion-button full (click)="takePhoto()" class="camera-mou">\n      <ion-icon name="camera"></ion-icon>&nbsp; &nbsp;Take Photo</button>\n    </div>\n  </div>\n  <button ion-button full (click)="accessContacts()" class="contact-mou">Contacts</button>\n</ion-content>\n'/*ion-inline-end:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_contacts__["c" /* Contacts */]])
     ], HomePage);
@@ -333,7 +333,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/Comicome/PhpstormProjects/Mobile/moumou/iesa-2018-b3-mobile-project/sources/aresMoumou/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/leanamartinez/Projects/iesa-2018-b3-mobile-project/sources/aresMoumou/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

@@ -1,20 +1,21 @@
-<ion-header>
+<ion-header class="header-mou">
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Audit zone 1</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-  <button ion-button full (click)="takePhoto()" >
-  <ion-icon name="camera" ></ion-icon>&nbsp; &nbsp;Take Photo</button>
-  <button ion-button full (click)="accessContacts()">Contacts</button>
+<ion-content padding class="bg-mou">
+  <img src="../../assets/imgs/logo-ares.png" class="logo-ares-mou">
+  <div class="gros-bloc">
+    <h2 class="titre-moyen-mou">Sous-zone "cuisine"</h2>
+    <div class="bloc-taille">
+      <h3 class="tache-mou">Tâche :</h3>
+      <p class="nom-tache-mou"> sol propre </p>
+      <button ion-button full (click)="takePhoto()" class="camera-mou">
+      <ion-icon name="camera"></ion-icon></button>
+      <div class="dictee">
+
+      </div>
+    </div>
+  </div>
 </ion-content>

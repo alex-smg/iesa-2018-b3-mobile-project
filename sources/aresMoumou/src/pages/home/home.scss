@@ -1,3 +1,34 @@
 page-home {
 
+  .bg-mou{
+    background-color: #f4f4f4;
+
+    .logo-ares-mou{
+      display: block;
+      margin: auto;
+    }
+
+    .gros-bloc{
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 10px 10px 10px;
+
+      .titre-moyen-mou{
+        color: #e38631;
+      }
+
+      .bloc-taille{
+        border: 1px solid grey;
+        padding: 10px 10px 10px;
+
+        .camera-mou{
+          background-color: #e38631;
+        }
+      }
+    }
+  }
+  .btn-mou{
+    background-color: #e38631;
+  }
 }
