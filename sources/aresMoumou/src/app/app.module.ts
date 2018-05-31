@@ -5,16 +5,19 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Camera } from '@ionic-native/camera';
 import { Contacts } from '@ionic-native/contacts';
+import { CallNumber } from '@ionic-native/call-number';
+
 import { Geolocation } from '@ionic-native/geolocation';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { EmailComposer } from '@ionic-native/email-composer';
-
+import { AddContact} from '../pages/addcontact/addcontact'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
 
 
@@ -24,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddContact
   ],
   imports: [
     BrowserModule,
@@ -36,15 +40,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddContact
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     EmailComposer,
+    CallNumber,
     Contacts,
     Geolocation,
+    SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

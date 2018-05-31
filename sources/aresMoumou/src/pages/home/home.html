@@ -1,23 +1,49 @@
-<ion-header class="header-mou">
-  <ion-navbar>
-    <ion-title>Audit zone 1</ion-title>
+<ion-header>
+  <ion-navbar [color]="isListening ? 'danger' : 'primary'">
+    <ion-title>
+      Enregistrement vocal
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="bg-mou">
-  <img src="../../assets/imgs/logo-ares.png" class="logo-ares-mou">
-  <div class="gros-bloc">
-    <h2 class="titre-moyen-mou">Sous-zone "cuisine"</h2>
-    <div class="bloc-taille">
-      <h3 class="tache-mou">Tâche :</h3>
-      <p class="nom-tache-mou"> sol propre </p>
-      <button ion-button full (click)="takePhoto()" class="camera-mou">
-      <ion-icon name="camera"></ion-icon></button>
-      <div class="dictee">
-      </div>
-    </div>
-  </div>
-</ion-content>
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <button ion-button full class="btn-mou" (click)="takePhoto()">
+    <ion-icon name="camera"></ion-icon>&nbsp;Takee Photo
+  </button>
 
-<p>Lat : {{ lat }}</p>
-<p>Lng : {{ lng }}</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 *ngFor="let photo of photos; let id = index">
+        <ion-card class="block">
+          <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
+          <img [src]="photo" *ngIf="photo" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p>Lat : {{ lat }}</p>
+  <p>Lng : {{ lng }}</p>
+
+
+  <ion-content padding>
+    <button ion-button (click)="getPermission()">Accès micro</button>
+    <button ion-button (click)="listen()" [color]="(isListening) ? 'danger' : 'secondary'">
+      <div>
+        <ion-icon name="mic">
+          <label>
+            {{ (isListening) ? 'Stop' : 'Enregistrer' }}
+          </label>
+        </ion-icon>
+      </div>
+    </button>
+
+    <ion-card>
+      <ion-card-content *ngFor="let match of matches">
+        <p>{{ match }}</p>
+      </ion-card-content>
+    </ion-card>
+
+
+</ion-content>
