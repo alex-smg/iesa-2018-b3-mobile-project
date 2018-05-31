@@ -1,20 +1,23 @@
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <button ion-button full  (click)="takePhoto()">
-    <ion-icon name="camera"></ion-icon>&nbsp;Takee Photo
-  </button>
+<ion-header class="header-mou">
+  <ion-navbar>
+    <ion-title>Audit zone 1</ion-title>
+  </ion-navbar>
+</ion-header>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col col-6 *ngFor="let photo of photos; let id = index">
-        <ion-card class="block">
-          <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
-          <img [src]="photo" *ngIf="photo" />
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <p>Lat : {{ lat }}</p>
-  <p>Lng : {{ lng }}</p>
+<ion-content padding class="bg-mou">
+  <img src="../../assets/imgs/logo-ares.png" class="logo-ares-mou">
+  <div class="gros-bloc">
+    <h2 class="titre-moyen-mou">Sous-zone "cuisine"</h2>
+    <div class="bloc-taille">
+      <h3 class="tache-mou">Tâche :</h3>
+      <p class="nom-tache-mou"> sol propre </p>
+      <button ion-button full (click)="takePhoto()" class="camera-mou">
+      <ion-icon name="camera"></ion-icon></button>
+      <div class="dictee">
+      </div>
+    </div>
+  </div>
 </ion-content>
+
+<p>Lat : {{ lat }}</p>
+<p>Lng : {{ lng }}</p>
